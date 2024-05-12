@@ -117,7 +117,7 @@ export default function Sidebar({ show, onClose }) {
         leaveFrom="translate-x-0"
         leaveTo="-translate-x-full"
       >
-        <aside className="absolute z-40 bg-white dark:bg-gray-900 w-80 md:w-72 left-0 h-screen border-r border-gray-300 dark:border-gray-700">
+        <aside className="fixed z-40 bg-white dark:bg-gray-900 w-80 md:w-72 left-0 top-0 bottom-0 h-screen border-r border-gray-300 dark:border-gray-700">
           <nav className="flex relative flex-shrink-0 flex-col h-full justify-between">
             <SidebarHeader></SidebarHeader>
             <ul className="flex-1 overflow-auto px-2 py-4">
@@ -150,7 +150,7 @@ export default function Sidebar({ show, onClose }) {
       >
         <div
           onClick={onClose}
-          className="absolute md:hidden inset-0 opacity-40 bg-gray-800 z-10 dark:bg-gray-900"
+          className="absolute md:hidden inset-0 opacity-40 bg-gray-800 dark:bg-gray-400 z-10 "
           role="button"
         ></div>
       </Transition.Child>
